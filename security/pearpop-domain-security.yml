@@ -1,0 +1,49 @@
+generated: '2026-08-04'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.pearpop.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep 24 07:27:39 2026 GMT
+  hsts: true
+  hsts_max_age: 31536000
+- host: pearpop.ai
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct 31 20:51:33 2026 GMT
+  hsts: false
+  note: Pearpop.AI application host; no Strict-Transport-Security header observed on
+    the sign-in response.
+domains:
+- domain: pearpop.com
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: quarantine
+- domain: pearpop.ai
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: quarantine
+dangling_dns:
+- host: api.pearpop.com
+  record: CNAME
+  target: d-xpcnp063c5.execute-api.us-west-2.amazonaws.com
+  resolves: false
+  note: CNAME published but the AWS API Gateway custom-domain target has no A record
+    — the API host is a dangling delegation, not a live API.
+- host: app.pearpop.com
+  record: CNAME
+  target: dhqx0s6nuv8kr.cloudfront.net
+  resolves: false
+- host: brands.pearpop.com
+  record: CNAME
+  target: des2om9aja3af.cloudfront.net
+  resolves: false
+x-evidence:
+  probed: '2026-08-04'
+  resolver: 8.8.8.8
+  method: dig + openssl s_client + HTTP HEAD

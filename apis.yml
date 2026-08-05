@@ -1,8 +1,19 @@
 aid: pearpop
 name: PearPop
-description: 'PearPop is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Pearpop, Inc. is a Los Angeles-based creator marketing company founded
+  in October 2020 by Cole Mason and Guy Oseary. It began as a two-sided social collaboration
+  marketplace where brands could book social-media creators on demand under a performance-based,
+  pay-per-placement model, and has since grown into a full-service creator marketing
+  partner running campaigns for brands including Netflix, Microsoft, Chipotle, Klarna
+  and Activision. Its current product line is marketed at pearpop.com (brand campaigns,
+  creator representation and events) plus Pearpop.AI at pearpop.ai — described in
+  Pearpop''s own terms of service as an AI-powered email platform for content creators
+  and influencers that handles brand-deal inboxes, contract review, rate recommendations
+  and payments. Pearpop publishes no public developer program, API documentation,
+  SDKs or machine-readable API specification; the only live API namespace, pearpop.ai/api/*,
+  redirects unauthenticated callers to the application sign-in page.'
 url: https://raw.githubusercontent.com/api-evangelist/pearpop/refs/heads/main/apis.yml
+image: https://framerusercontent.com/assets/ao2KsbBYtXXhJYI7gchP67vlJaI.png
 x-type: company
 x-source: harvest:secondary-market
 x-tier: stub
@@ -12,6 +23,13 @@ created: '2026-08-04'
 modified: '2026-08-04'
 tags:
 - Company
+- Creator Economy
+- Influencer Marketing
+- Social Media
+- Marketing
+- Marketplace
+- Talent Management
+- Artificial Intelligence
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +37,44 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/pearpop-domain-security.yml
 - type: Website
+  url: https://www.pearpop.com/
+- type: TermsOfService
+  url: https://pearpop.ai/terms
+- type: PrivacyPolicy
+  url: https://pearpop.ai/privacy
+- type: SignIn
+  url: https://pearpop.ai/signin
+- type: LinkedIn
+  url: https://www.linkedin.com/company/pearpop
+- type: Instagram
+  url: https://www.instagram.com/pearpop/
+- type: Investors
   url: https://forgeglobal.com/pearpop_stock/
+x-enrichment:
+  date: '2026-08-04'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: Pearpop ships no developer surface at all — pearpop.com is a 15-page Framer
+    marketing site whose sitemap contains no docs or developer page, api.pearpop.com
+    is a dangling CNAME to a deleted AWS API Gateway custom domain, and the only live
+    API namespace (pearpop.ai/api/*) 302s every anonymous call to the Pearpop.AI sign-in
+    page.
+  evidence:
+  - url: https://www.pearpop.com/developers
+    status: 404
+  - url: https://www.pearpop.com/openapi.json
+    status: 404
+  - url: https://www.pearpop.com/sitemap.xml
+    status: 200
+  - url: https://pearpop.ai/api/health
+    status: 302
+  - url: https://pearpop.ai/.well-known/agent-card.json
+    status: 404
+  checked: '2026-08-04'
