@@ -13,6 +13,17 @@ description: 'Pearpop, Inc. is a Los Angeles-based creator marketing company fou
   SDKs or machine-readable API specification; the only live API namespace, pearpop.ai/api/*,
   redirects unauthenticated callers to the application sign-in page.'
 url: https://raw.githubusercontent.com/api-evangelist/pearpop/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://framerusercontent.com/assets/ao2KsbBYtXXhJYI7gchP67vlJaI.png
 x-type: company
 x-source: harvest:secondary-market
