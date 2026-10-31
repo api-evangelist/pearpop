@@ -64,5 +64,81 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-PearPop is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://forgeglobal.com/pearpop_stock/
+Pearpop, Inc. is a Los Angeles-based creator marketing company founded in October 2020 by Cole Mason and Guy Oseary. It began as a two-sided social collaboration marketplace where brands could book social-media creators on demand under a performance-based, pay-per-placement model, and has since grown into a full-service creator marketing partner running campaigns for brands including Netflix, Microsoft, Chipotle, Klarna and Activision. Its current product line is marketed at pearpop.com (brand campaigns, creator representation and events) plus Pearpop.AI at pearpop.ai — described in Pearpop's own terms of service as an AI-powered email platform for content creators and influencers that handles brand-deal inboxes, contract review, rate recommendations and payments. Pearpop publishes no public developer program, API documentation, SDKs or machine-readable API specification; the only live API namespace, pearpop.ai/api/*, redirects unauthenticated callers to the application sign-in page.
+
+**Areas:** Company · Creator Economy · Influencer Marketing · Social Media · Marketing · Marketplace · Talent Management · Artificial Intelligence
+
+## PearPop on APIs.io
+
+Everything profiled for PearPop is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/pearpop/](https://apis.io/providers/pearpop/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Pearpop Domain Security](https://apis.io/security/pearpop/pearpop-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.pearpop.com/)
+- [Terms of service](https://pearpop.ai/terms)
+- [Privacy policy](https://pearpop.ai/privacy)
+
+## API Evangelist rating
+
+**Kin Score 8.7** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 0.0 |
+| Access clarity | 21.1 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 12.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/pearpop/](https://apis.io/providers/pearpop/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for PearPop: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/pearpop/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
